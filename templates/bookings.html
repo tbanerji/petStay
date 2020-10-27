@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name=author content="Tarini Banerji">
+    <title>Pet Sitting Intake Form</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}">
+     
+</head>
+<body>
+
+
+<h1>PetPamperer</h1>
+
+<h2>Need a companion for your furry friend?</h2>
+
+    <p> I'm Tarini, a third-year Computer Science and Media Studies student at Wellesley with an interest in social entrepreneurship.
+        In my free time, I love to bake, explore cities, make films and spend time with animals!</p>
+        
+        <p>I have two dogs, Shylo (Cockerspaniel) and Jodie (Husky) who live in Seattle with my brother.
+            I miss them all the time and would love for the opportunity to be around animals again, which is why I started pet-sitting.</p>
+        
+            <img src="https://github.com/tbanerji/petStay">
+        
+        
+        <p>  Whether you're travelling or getting back to work, 
+            your pet shouldn't have to miss you. I'm here to make sure they're well taken care of in your absence. </p>
+        
+        
+        
+        <p>Fill out some details about their stay with me:</p>
+        
+
+            <h2>Pet Intake Form</h2>
+            <form method=POST action="{{url_for('booking')}}">
+                <table>
+                    <tr>
+                        <td><label for="cname">Customer name</label></td>
+                        <td><input id="cname" name="customer" required></td>
+                    </tr>
+                    <tr><td><label for="pname">Pet name</label></td>
+                            <td><input id="pname" name="pname" required></td>
+                    </tr>
+                    <tr><td><label for="ptype">Pet Type</label></td>
+        
+                        <td><select id="ptype" name="ptype" required>
+                                <option value="">select</option>
+                                <option value="CAT">Cat</option>
+                                <option value="DOG">Dog</option>
+                                <option value="BIR">Bird</option>
+                                <option value="RAB">Rabbit</option>
+                                <option value="TUR">Turtle</option>
+                                <option value="HAM">Hamster</option>
+                                <option value="GUI">Guinea Pig</option></select> </td>
+                        </tr>
+                            
+                        <tr><td><label for="gender">Gender</label>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" id="gender" name="gender" value="female">Female</td>
+                        </tr>
+                        <tr><td>
+                                <label for="neutered">Neutered</label>
+                            <input type="radio" name="neutered" id="neutered" value="yes">Yes
+                            <input type="radio" name="neutered" id="neutered" value="no">No</td></tr>
+                                
+                    <tr>
+                        <td><label for="num_days">Length of Stay</label>
+                        <input id="num_days" name="num_days" required></td></tr>
+                
+                <tr><td> <label>Allergies
+                <textarea name="allergies" rows=5 cols=40></textarea></label></td></tr>
+                    <tr><td> <label>Extra Care Instructions
+                       
+                        
+                         <textarea name="extracare" rows=5 cols=40></textarea></label></td></tr>
+            <tr><td> <p><input type="submit" value="Book PetCation"></p></td></tr>
+                </table>
+        
+        
+            </form>
+
+</html>

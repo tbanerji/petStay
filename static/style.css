@@ -1,0 +1,20 @@
+H1 {color:indigo;font-weight:bold;font-family:"Helvetica";font-size:x-large;}
+H2 {color:purple;font-family:"Helvetica";font-size:large;}
+P {color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-size:medium;}
+TD {color:white;font-family:Arial, Helvetica, sans-serif;font-size:medium;}
+label {color:white;font-family:Arial, Helvetica, sans-serif;font-size:medium;}
+
+        #wrapper {
+padding: 2em;
+width: 40%;
+}
+.not-yet {
+color:white;
+}
+form {
+border: 2px solid blue;
+margin: 1em 0em 1em 2em;
+padding: 2em;
+background-color: purple;
+text-emphasis-color: black;}
+    
